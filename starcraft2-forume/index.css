@@ -1,0 +1,63 @@
+ *{
+     margin: 0px;
+     font-family:"fantasy";
+ }
+ /* NAVBAR SECTION */
+ #navbar{
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 60px;
+ }
+ #nav{
+     background-color: gray;
+ }
+ a, a:visited {
+ color: white;
+ text-decoration: none;
+ font-weight: 800;
+ }
+/* intro section */
+#intro{
+    background-image: url(/Users/hoyounglim/Documents/GitHub/jihun-park2.github.io/starcraft2-forume/images/starcraft2introimage.jpg);
+   height: 600px;
+   background-size: cover;
+}
+.introitem{
+    color: whitesmoke;
+    text-align: center;
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+#heading{
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+#description{
+    font-size: 20px;
+}
+/* card section */
+#cards {
+    display: flex;
+    justify-content: space-around;
+}
+.carditem {
+    background-color: cornflowerblue;
+    border-radius:  10px;
+    color: wheat;
+    width: 30%;
+    margin: 15px 0px;
+}
+.cardp {
+    padding: 20px;
+
+}
+.cardimg{
+    width: 90%;
+    border-radius: 10px;
+    margin: 5%;
+}
