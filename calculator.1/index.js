@@ -120,7 +120,13 @@ function handleequalkey() {
     var expression = expressionelement.innerHTML;
     expression = expression.replace(/×/g, "*");
     expression = expression.replace(/÷/g, "/");
-    resultelement.innerHTML = eval(expression);  
-    evaluated = true;
+
+    try {
+        var result = eval(expression);
+        resultelement.innerHTML = result;
+        evaluated = true;
+    } catch(error) {
+        alert('Syntax Error');
+    }
 }
 
