@@ -126,7 +126,7 @@ function handleequalkey() {
         resultelement.innerHTML = result;
         evaluated = true;
     } catch(error) {
-        resultelement.innerHTML = "SYntax Error";
+        resultelement.innerHTML = "Syntax Error";
         evaluated = true;
     }
 }
