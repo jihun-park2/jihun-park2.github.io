@@ -11,7 +11,7 @@ html, body {
     height: 100%;
 }
 
-.card-container {
+.level-1 {
     height: 600px;
     width: 600px;
     display: grid;
@@ -20,6 +20,18 @@ html, body {
     grid-gap: 5px;
     margin: 0px auto;
 }
+
+.level-2 {
+    height: 900px;
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 5px;
+    margin: 50px auto;
+    display: none;
+}
+
 .card {
     border: solid 2px black;
     display: flex;
