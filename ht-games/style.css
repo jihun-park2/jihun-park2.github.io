@@ -32,6 +32,17 @@ html, body {
     display: none;
 }
 
+.level-3 {
+    height: 900px;
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 5px;
+    margin: 50px auto;
+    display: none;
+}
+
 .card {
     border: solid 2px black;
     display: flex;
