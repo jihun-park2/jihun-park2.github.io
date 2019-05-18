@@ -8,7 +8,6 @@ var level = 1;
 var levelOneScore = 0;
 var levelTwoScore = 0;
 
-
 for(var i = 0; i < cardDivs.length; i++) {
     cardDivs[i].addEventListener('click', handlecardclick);
 }
@@ -21,7 +20,6 @@ function handlecardclick() {
     if (clickedcard.tagName == "DIV" && clickedcardDivs.length != 2) {
        clickedcard.classList.remove('unselected');
        clickedcardDivs.push(clickedcard);
-       console.log(clickedcardDivs);
     } else if (clickedcard.tagName == "IMG") {
         alert("Do not click a card twice");
     }
@@ -39,19 +37,25 @@ function handlecardclick() {
 
             if (level == 1) {
                 levelOneScore++;
-                levelTwoScore++;
+            }
 
-            if (levelOneScore == 8) {
-                alert('level up')
+            if (level == 2) {
+                levelTwoScore++;
+            }
+               
+            if (level == 1 && levelOneScore == 8) {
+                alert('level up');
+                level = 2;
                 levelOneContainer.style.display = "none";
                 levelTwoContainer.style.display = "grid";
             }
-            if (levelTwoScore == 18) {
-                alert('Gineus, level up')
+            
+            if (level == 2 && levelTwoScore == 18) {
+                alert('Gineus, level up');
+                level = 3;
                 levelTwoContainer.style.display = "none";
                 levelThreecontainer.style.display = "grid";
             }
-        }
         } else {
             setTimeout(flipover, 1500);
         }
